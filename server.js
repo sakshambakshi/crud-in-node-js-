@@ -171,27 +171,3 @@ app.listen(3001 , ()=>{
 
 
 
-/**
- * app.delete('/delete/:id' , (req , res , next) =>{
-    console.log(`Inside the delete node ${req.params.id} `)
-    pool.getConnection((err , connection ) =>{
-        if(err){
-            res.json({'code': 100 , 'status': "Error at forming pool deleting 1 "});
-            connection.release()
-        }
-        else{
-            connection.query(`DELETE FROM food WHERE id = ${req.params.id} ` , (res , err , next) =>{
-                if(!err){
-                    res.json({'code': 200 , 'status': `Deleted id ${req.params.id}`});
-                    connection.release();
-                }
-                else{
-                    res.json({'code': 100 , 'status': `Error at running query`});
-                    connection.release()
-                }
-            })
-        }
-    })
-})
- */
-
