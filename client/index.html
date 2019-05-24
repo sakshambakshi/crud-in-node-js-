@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+ 
+    <title>Node js </title>
+</head>
+<body>
+  <div class="container">
+
+  <!-- Alert -->
+   
+
+
+  <!-- <form id="form" action=""> -->
+    <div class="row">
+    <div class="col-md-12">
+      <div class="heading">Add Record</div>
+    </div>
+    <div class="col-md-3">
+    <input id="firstName" class="form-control" name="firstName" type="text" placeholder="enter your First Name" required>
+    </div>
+    <div class="col-md-3">
+    <input id="dob" class="form-control" required  type="date" name="dob"></div>
+ 
+    <div class="col-md-3">
+    <select id="category" class="custom-select " required>
+        <option selected>Category</option>
+        <option value="Veg">Veg</option>
+        <option value="Non-Veg">Non-Veg</option>
+    </select>
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-info form-control" id="request">Submit </button>
+    </div>
+  </div>
+    <br>
+    <br>
+
+    
+
+    <table class="table table-bordered table-hover table-striped" id="table-data">
+        <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Date-of-Birth</th>
+              <th scope="col">Category</th>
+              <th scope="col">Delete</th>
+              <th scope="col">Update </th>
+            </tr>
+          </thead>
+          <tbody id="table-rows">
+
+          </tbody>
+    </table>
+  </div>
+  <!-- </form> -->
+</body>
+  <script src="script.js"></script>
+<script>
+    // axios.defaults.headers.post['Content-Type'] ='application/x-www-form-urlencoded';
+    
+
+</script>
+
+</html>

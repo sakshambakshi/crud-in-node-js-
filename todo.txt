@@ -1,0 +1,20 @@
+  // error in insert statement
+
+
+    // if error in getting connection
+ // if name is other than saksham then show error
+
+
+    // select from food table where name is saksham
+
+
+    // if no data found show error
+
+
+
+    // error in database connection
+    
+
+    // error in  name should not be mukul
+    // age should be above `18
+    // category is among veg and non veg
